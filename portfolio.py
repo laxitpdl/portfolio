@@ -1,6 +1,7 @@
 #https://laxitpdl-my-todo-webapp-web-axotkz.streamlit.app/
 
 import streamlit as st
+import pandas
 
 st.set_page_config(layout="wide")
 
@@ -19,3 +20,16 @@ Fluent in both code and calculation, I aim to solve meaningful problems and push
 comment2 = """ Below you can see my apps and fell free to share your experience!!"""
 
 st.info(comment2) 
+
+
+col3, col4 = st.columns(2)
+
+df = pandas.read_csv("data.csv", sep=';')
+with col3:
+    for index, row in df[:10].iterrows():
+        st.header(row["title"])
+
+
+with col4:
+    for index, row in df[10:].iterrows():
+        st.header(row["title"])
