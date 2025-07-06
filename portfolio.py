@@ -11,11 +11,9 @@ with col1:
 
 with col2:
     st.title("Lakshit Poudel")
-    st.write(
-        "Hi! I’m Lakshit Poudel, an aspiring programmer from Nepal, now based in the U.S. "
+    st.write("Hi! I’m Lakshit Poudel, an aspiring programmer from Nepal, now based in the U.S. "
         "I build real-world apps using Python, AI, and Streamlit. Self-taught and hyper-focused, "
-        "I blend code with logic to solve meaningful problems and push my limits — in tech and in life."
-    )
+        "I blend code with logic to solve meaningful problems and push my limits — in tech and in life.")
 
 # APP SECTION INTRO 
 st.info("Below you can see my apps — feel free to try them and share your experience!")
